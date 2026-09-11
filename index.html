@@ -1,149 +1,254 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>K-NIDOS | Adiestramiento Canino de Nogales</title>
+<title>K-NIDOS | Adiestramiento Canino en Nogales</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+* {
+    box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f9;
-      color: #0b2855;
-      display: flex;
-      justify-content: center;
-      padding: 35px 18px;
-    }
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at top, #eef5ff 0%, #ffffff 48%, #f4f7fb 100%);
+    color: #0b2855;
+    display: flex;
+    justify-content: center;
+    padding: 28px 18px;
+}
 
-    .container {
-      width: 100%;
-      max-width: 430px;
-      text-align: center;
-    }
+.container {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+}
 
-    .logo {
-      width: 190px;
-      max-width: 70%;
-      margin-bottom: 12px;
-    }
+/* LOGO */
 
-    h1 {
-      margin: 5px 0 4px;
-      font-size: 30px;
-      letter-spacing: 2px;
-    }
+.logo {
+    width: 220px;
+    max-width: 78%;
+    display: block;
+    margin: 0 auto 8px;
+}
 
-    .subtitle {
-      margin: 0 0 8px;
-      font-size: 17px;
-      font-weight: bold;
-    }
+h1 {
+    font-size: 25px;
+    margin: 4px 0 7px;
+    color: #0b2855;
+}
 
-    .location {
-      margin: 0 0 25px;
-      color: #666;
-      font-size: 14px;
-    }
+.tagline {
+    margin: 0 auto 8px;
+    font-size: 16px;
+    color: #3e4e63;
+}
 
-    .button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      min-height: 58px;
-      margin: 13px 0;
-      padding: 14px 20px;
-      border-radius: 14px;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      background: white;
-      color: #0b2855;
-      border: 2px solid #0b2855;
-      box-shadow: 0 3px 8px rgba(0,0,0,.08);
-      transition: .2s;
-    }
+.location {
+    margin: 0 0 22px;
+    font-size: 14px;
+    color: #758091;
+}
 
-    .button:hover {
-      transform: translateY(-2px);
-      background: #0b2855;
-      color: white;
-    }
+/* WHATSAPP PRINCIPAL */
 
-    .whatsapp {
-      background: #25D366;
-      border-color: #25D366;
-      color: white;
-    }
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 62px;
+    padding: 15px 18px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 5px 14px rgba(0,0,0,.13);
+    transition: transform .2s;
+}
 
-    .footer {
-      margin-top: 28px;
-      font-size: 13px;
-      color: #777;
-    }
+.whatsapp:hover {
+    transform: translateY(-2px);
+}
 
-    .paw {
-      font-size: 28px;
-      margin-bottom: 5px;
-    }
-  </style>
+/* SERVICIOS */
+
+.services {
+    margin: 21px 0 20px;
+    padding: 15px 10px;
+    background: rgba(255,255,255,.8);
+    border-radius: 14px;
+    border: 1px solid #dce5f0;
+}
+
+.services-title {
+    margin: 0 0 9px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0b2855;
+}
+
+.services-text {
+    margin: 0;
+    font-size: 14px;
+    color: #536174;
+    line-height: 1.6;
+}
+
+/* REDES */
+
+.follow {
+    margin: 5px 0 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #657186;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+}
+
+.social {
+    min-height: 70px;
+    padding: 11px 4px;
+    background: white;
+    border: 1px solid #d7e0ec;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #0b2855;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 3px 9px rgba(0,0,0,.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    transition: .2s;
+}
+
+.social:hover {
+    transform: translateY(-2px);
+    border-color: #0b2855;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #7b8594;
+    line-height: 1.5;
+}
+
+.paw {
+    font-size: 23px;
+    margin-bottom: 4px;
+}
+
+</style>
 </head>
 
 <body>
 
-  <main class="container">
+<main class="container">
 
-    <img src="logo.jpeg"
-         alt="K-NIDOS Adiestramiento Canino"
-         class="logo">
+    <img
+        src="logo.jpeg"
+        alt="K-NIDOS Adiestramiento Canino"
+        class="logo"
+    >
 
-    <h1>K-NIDOS</h1>
+    <h1>Adiestramiento Canino en Nogales</h1>
 
-    <p class="subtitle">
-      Adiestramiento Canino
+    <p class="tagline">
+        Mejor comunicación. Mejor convivencia.
     </p>
 
     <p class="location">
-      Nogales, Sonora
+        Nogales, Sonora
     </p>
 
-    <a class="button whatsapp"
-       href="https://wa.me/qr/SJUDR4IXUDXMG1"
-       target="_blank">
-       💬 WhatsApp
+    <a
+        class="whatsapp"
+        href="https://wa.me/qr/SJUDR4IXUDXMG1"
+        target="_blank"
+    >
+        💬 &nbsp; QUIERO INFORMACIÓN POR WHATSAPP
     </a>
 
-    <a class="button"
-       href="https://www.facebook.com/share/1Jzssgs9i3/"
-       target="_blank">
-       📘 Facebook
-    </a>
+    <section class="services">
 
-    <a class="button"
-       href="https://www.instagram.com/knidos_nogales"
-       target="_blank">
-       📸 Instagram
-    </a>
+        <p class="services-title">
+            🐕 ¿Cómo podemos ayudarte?
+        </p>
 
-    <a class="button"
-       href="https://www.tiktok.com/@knidos.adiestrami"
-       target="_blank">
-       ♪ TikTok
-    </a>
+        <p class="services-text">
+            Obediencia &nbsp;•&nbsp;
+            Cachorros &nbsp;•&nbsp;
+            Conducta &nbsp;•&nbsp;
+            Asesoría
+        </p>
 
-    <div class="footer">
-      <div class="paw">🐾</div>
-      K-NIDOS · Adiestramiento Canino de Nogales
+    </section>
+
+    <p class="follow">
+        Síguenos
+    </p>
+
+    <div class="socials">
+
+        <a
+            class="social"
+            href="https://www.instagram.com/knidos_nogales"
+            target="_blank"
+        >
+            <span class="icon">📸</span>
+            Instagram
+        </a>
+
+        <a
+            class="social"
+            href="https://www.facebook.com/share/1Jzssgs9i3/"
+            target="_blank"
+        >
+            <span class="icon">📘</span>
+            Facebook
+        </a>
+
+        <a
+            class="social"
+            href="https://www.tiktok.com/@knidos.adiestrami"
+            target="_blank"
+        >
+            <span class="icon">♪</span>
+            TikTok
+        </a>
+
     </div>
 
-  </main>
+    <div class="footer">
+        <div class="paw">🐾</div>
+        <strong>K-NIDOS</strong><br>
+        Adiestramiento Canino de Nogales
+    </div>
+
+</main>
 
 </body>
 </html>
